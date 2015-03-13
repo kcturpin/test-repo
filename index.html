@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>My web site</title>
+</head>
+<body>
+
+	<header><h1>Title</h1></header>
+
+
+<ul>
+	<li>Milk</li>
+	<li>Eggs</li>
+	<li>Bacon</li>
+	<li>Sauce</li>
+</ul>
+<button id="addOne">Add One</button>
+<input id="name" type="text">
+
+
+<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script>
+
+$('#addOne').click(function(){
+	var value =$('#name').val();
+	alert(value);
+	$('ul').append("<li>"+value+"</li>");
+});
+</script>
+</body>
+</html>
